@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <h1 id="title">Form Submission:</h1>
+
+            <form id="survey-form" class="survey-form">
+                <label for="fname">
+                    <h5>First Name:</h5>
+                </label> <br>
+                <input type="text" name="fname" id="fname" class="form-box" placeholder="First name"> <br>
+                <br>
+                <label for="lname">
+                    <h5>Last Name:</h5>
+                </label> <br>
+                <input type="text" name="lname" id="lname" class="form-box" placeholder="Last name"> <br>
+                <br>
+                <label for="address1">
+                    <h5>Address line 1:</h5>
+                </label> <br>
+                <input type="text" name="address1" id="address1" class="form-box" placeholder="Address line 1">
+                <br>
+                <br>
+                <label for="address2">
+                    <h5>Address line 2:</h5>
+                </label> <br>
+                <input type="text" name="address2" id="address2" class="form-box" placeholder="Address line 2">
+                <br>
+                <br>
+                <label for="pin">
+                    <h5>PINCODE:</h5>
+                </label> <br>
+                <input type="text" name="pin" id="pin" class="form-box" placeholder="pincode"> <br>
+                <br>
+                <label for="gender">
+                    <h5>Gender:</h5>
+                </label><br>
+                <input type="radio" name="gender" id="g1" class="gender" value="Male"> Male<br>
+                <input type="radio" name="gender" id="g2" class="gender" value="Female"> Female<br>
+                <input type="radio" name="gender" id="g3" class="gender" value="Transgender"> Transgender<br>
+                <br>
+                <label for="food">
+                    <h5> Choice of Food: <i>(Must choose atleast 2 options)</i></h5>
+                </label><br>
+                <input type="checkbox" name="food" id="f1" class="food" value="Indian Cuisine"> Indian Cuisine<br>
+                <input type="checkbox" name="food" id="f2" class="food" value="Mediterranean Cuisine"> Mediterranean
+                Cuisine<br>
+                <input type="checkbox" name="food" id="f3" class="food" value="French Cuisine"> French Cuisine<br>
+                <input type="checkbox" name="food" id="f4" class="food" value="Chinese Cuisine"> Chinese Cuisine<br>
+                <input type="checkbox" name="food" id="f5" class="food" value="Italian Cuisine"> Italian Cuisine<br>
+                <br>
+                <label for="state">
+                    <h5>State:</h5>
+                </label> <br>
+                <input type="text" name="state" id="state" class="form-box" placeholder="state"> <br>
+                <br>
+                <label for="country">
+                    <h5> Country: </h5>
+                </label> <br>
+                <input type="text" name="country" id="country" class="form-box" placeholder="country"> <br>
+                <br>
+                <p id="description"><i>(Please ensure all details are accurate before submitting your form.)</i></p>
+                <input type="submit" name="submit" id="submit" class="submit bg-dark text-light">
+
+            </form>
+
+        </div>
+        <div class="vl"></div>
+        <div class="col-sm-12 col-md-12 col-lg-8">
+            <table class="table">
+                <h1> Survey Database : </h1> <br>
+                <thead class="bg-dark text-light">
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Address</td>
+                        <td>Pincode</td>
+                        <td>Gender</td>
+                        <td>Food</td>
+                        <td>State</td>
+                        <td>Country</td>
+                    </tr>
+                </thead>
+                <tbody class="tbody text-light" id="tbody">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

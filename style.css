@@ -1,0 +1,17 @@
+body{
+    background-color: black; 
+    color: white; 
+    margin: 2%
+
+}
+.form-box{
+    width: 70%;
+}
+.submit {
+    width: 50%;
+    align-items: center;
+}
+.table{
+    position:sticky;
+    top: 0;
+}
